@@ -64,7 +64,7 @@ async function run() {
       res.send(result);
     });
 
-    //insert items
+    //insert
     app.post("/items", async (req, res) => {
       const newItems = req.body;
       // const tokenInfo = req.headers.authorization;
