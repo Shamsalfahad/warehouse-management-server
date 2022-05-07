@@ -12,8 +12,6 @@ const port = process.env.PORT || 5000;
 //middleware
 app.use(cors());
 app.use(express.json());
-//user:user
-//pass:H3Zen4m7Z2sTEvaO
 
 // const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.1cytt.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;
 const uri = `mongodb://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0-shard-00-00.1cytt.mongodb.net:27017,cluster0-shard-00-01.1cytt.mongodb.net:27017,cluster0-shard-00-02.1cytt.mongodb.net:27017/myFirstDatabase?ssl=true&replicaSet=atlas-embpbb-shard-0&authSource=admin&retryWrites=true&w=majority`;
