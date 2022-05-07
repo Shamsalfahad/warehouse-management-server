@@ -27,7 +27,7 @@ async function run() {
     console.log("data done")
     const itemsCollection = client.db("perfume_Gallery").collection("products");
 
-    //  Jwt
+    //Jwt
      app.post("/login", (req, res) => {
        const email = req.body;
        console.log(email);
